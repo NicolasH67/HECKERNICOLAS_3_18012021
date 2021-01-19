@@ -1,0 +1,19 @@
+{
+  "name": "heckernicolas_3_18012021",
+  "version": "1.0.0",
+  "description": "Scénario Vous venez d’être recruté chez Ohmyfood!, en tant que développeur junior. Félicitations !",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./SASS/main.scss:CSS/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicolasH67/HECKERNICOLAS_3_18012021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NicolasH67/HECKERNICOLAS_3_18012021/issues"
+  },
+  "homepage": "https://github.com/NicolasH67/HECKERNICOLAS_3_18012021#readme"
+}
