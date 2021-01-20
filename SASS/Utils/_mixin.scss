@@ -1,0 +1,4 @@
+@mixin logo($size) {
+    font-family: $logo;
+    font-size: $size;
+}
