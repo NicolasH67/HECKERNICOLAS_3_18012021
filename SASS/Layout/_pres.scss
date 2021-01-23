@@ -1,0 +1,15 @@
+.pres {
+    width: 100%;
+    justify-content: center;
+    &__title {
+        width: 80%;
+        @include center;
+        @include text(1.5rem, $color-txt); 
+        font-weight: 900;
+    }
+    &__p {
+        @include text(1rem, $color-txt);
+        width: 90%;
+        @include center;
+    }
+}

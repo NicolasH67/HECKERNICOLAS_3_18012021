@@ -18,6 +18,9 @@
         p {
             text-align: center;
         }
+        __icone {
+            color: $color-txt;
+        }
         &__input {
             border: none;
             background-color: $color-bg;
