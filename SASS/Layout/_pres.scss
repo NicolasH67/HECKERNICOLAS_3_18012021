@@ -1,6 +1,7 @@
 .pres {
     width: 100%;
     justify-content: center;
+    @include center;
     &__title {
         width: 80%;
         @include center;
