@@ -2,6 +2,10 @@
     width: 100%;
     justify-content: center;
     @include center;
+    margin-top: -15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: lighten($color-bg, 5%);
     &__title {
         width: 80%;
         @include center;
