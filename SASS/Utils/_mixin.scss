@@ -9,6 +9,11 @@
     color: $color;
 }
 
+@mixin icone($size, $color) {
+    font-size: $size;
+    color: $color;    
+}
+
 @mixin center {
     margin-left: auto;
     margin-right: auto;

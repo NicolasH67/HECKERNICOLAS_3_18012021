@@ -92,6 +92,9 @@ body {
   color: White;
 }
 
+.op {
+  margin: 25px 15px 50px 15px;
+}
 .op__title {
   font-family: "Roboto";
   font-size: 1.5rem;
@@ -101,7 +104,79 @@ body {
   display: flex;
   flex-direction: row;
   background-color: #f0efef;
+  margin-bottom: 25px;
+  width: 95%;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.op__step__num {
+  position: relative;
+  left: -10px;
+  font-family: "Roboto";
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  background-color: #9356DC;
+  padding: 5px 10px 5px 10px;
+  border-radius: 150px;
+}
+.op__step__icone {
+  font-size: 1rem;
+  color: #9356DC;
+  margin: 22px 15px auto 10px;
+}
+.op__step__title {
+  font-family: "Roboto";
+  font-size: 1rem;
+  color: #000000;
+  margin-top: 22px;
+}
+.op__step--purple {
+  background-color: #f4eefc;
+}
+
+.resto {
+  width: 100%;
+  background-color: #f0efef;
+}
+.resto__title {
+  font-family: "Roboto";
+  font-size: 1.5rem;
+  color: #000000;
+  margin-left: 15px;
+  padding-top: 50px;
+}
+.resto__lien {
+  width: 100%;
+}
+.resto__lien__fig {
   width: 90%;
+  background-color: white;
+  border-radius: 35px;
+  box-shadow: 15px 15px 15px #e4e2e2;
+  margin: 15px;
+  height: 100px;
+}
+.resto__lien__fig__img {
+  border-radius: 30px 30px 0px 0px;
+  width: 100%;
+}
+.resto__lien__fig__cap {
+  font-family: "Roboto";
+  font-size: 1rem;
+  color: #000000;
+  background-color: white;
+  padding-left: 15px;
+  margin: 0px;
+  border-radius: 0px 0px 35px 35px;
+}
+.resto__lien__fig__cap__new {
+  position: relative;
+  background-color: #99E2D0;
+  color: #1b6150;
+  width: 66px;
 }
 
 /*# sourceMappingURL=style.css.map */
