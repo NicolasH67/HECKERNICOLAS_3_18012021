@@ -1,0 +1,11 @@
+.op {
+    &__title {
+        @include text(1.5rem, $color-txt);
+    }
+    &__step {
+        display: flex;
+        flex-direction: row;
+        background-color: lighten($color-bg, 5%);
+        width: 90%;
+    }
+}

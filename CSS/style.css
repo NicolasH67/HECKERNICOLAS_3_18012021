@@ -92,4 +92,16 @@ body {
   color: White;
 }
 
+.op__title {
+  font-family: "Roboto";
+  font-size: 1.5rem;
+  color: #000000;
+}
+.op__step {
+  display: flex;
+  flex-direction: row;
+  background-color: #f0efef;
+  width: 90%;
+}
+
 /*# sourceMappingURL=style.css.map */
