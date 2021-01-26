@@ -1,0 +1,28 @@
+.footer {
+    background-color: $color-bg-footer;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    &__title {
+        @include logo(1rem, white);
+        margin-left: 25px;
+    }
+    &__nav {
+        margin-left: -15px;
+        &__menu {
+            list-style-type: none;
+            li {
+                margin-bottom: 5px;
+            }
+            &__element{
+                text-decoration: none;
+                @include text(1rem, white);
+                &__icone {
+                    margin-right: 5px;
+                    &--small {
+                        @include text(0.9rem, white)
+                    }
+                }
+            }
+        }
+    }
+}
