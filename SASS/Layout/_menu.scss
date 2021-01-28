@@ -1,0 +1,10 @@
+.menu {
+    border-radius: 25px 25px 0px 0px;
+    margin-top: -10px;
+    background-color: red;
+    overflow: visible;
+    &__title {
+        margin-left: 15px;
+        @include logo(1.5rem, $color-txt);
+    }
+}

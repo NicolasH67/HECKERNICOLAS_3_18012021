@@ -11,6 +11,9 @@
         width: 95%;
         border-radius: 20px;
         @include center;
+        &:hover {
+            background-color: lighten($color-primary, 36%);
+        }
         &__num {
             position: relative;
             left: -10px;
@@ -29,7 +32,6 @@
             margin-top: 22px;
         }
         &--purple {
-            background-color: lighten($color-primary, 36%);
         }
     }
 }

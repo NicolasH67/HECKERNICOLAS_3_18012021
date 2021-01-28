@@ -9,6 +9,19 @@
         @include logo(1.9rem, $color-txt);
         text-align: center;
         margin: 5px auto 5px auto;
+        &--menu {
+            margin-top: -15px;
+        }
+    }
+    &__back {
+        font-size: 1.25rem;
+        position: relative;
+        left: 20px;
+        top: 20px;
+    }
+    &__img {
+        overflow: hidden;
+        width: 100%;
     }
     &__form {
         background-color: $color-bg;
