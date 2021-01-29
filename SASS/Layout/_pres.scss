@@ -9,11 +9,10 @@
     &__title {
         width: 80%;
         @include center;
-        @include text(1.5rem, $color-txt); 
-        font-weight: 900;
+        @include text(1.5rem, $color-txt, $bold); 
     }
     &__p {
-        @include text(1rem, $color-txt);
+        @include text(1rem, $color-txt, $normal);
         width: 90%;
         @include center;
     }

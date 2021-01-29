@@ -1,10 +1,43 @@
 .menu {
-    border-radius: 25px 25px 0px 0px;
-    margin-top: -10px;
-    background-color: red;
+    border-radius: 40px 40px 0px 0px;
+    background-color: lighten($color-bg, 5%);
     overflow: visible;
+    padding-top: 10px;
+    position: relative;
+    top: -50px;
     &__title {
         margin-left: 15px;
         @include logo(1.5rem, $color-txt);
+    }
+    &__starter {
+        margin-left: 15px;
+        &__title {
+            @include text(1rem, $color-txt, $normal);
+            font-weight: 300;
+        }
+    }
+}
+
+.plat {
+    background-color: white;
+    margin-right: 15px;
+    padding-left: 10px;
+    border-radius: 15px;
+    &__title {
+        @include text(1rem, $color-txt, $bold);
+        margin-bottom: -10px;
+        padding-top: 10px;
+    }
+    &__sup {
+        @include text(1rem, $color-txt, $normal);
+        font-weight: $normal;
+        margin-bottom: -20px
+    }
+    &__price {
+        @include text(1rem, $color-txt, $bold);
+        font-weight: $bold;
+        position: relative;
+        top: -15px;
+        left: 240px;
     }
 }

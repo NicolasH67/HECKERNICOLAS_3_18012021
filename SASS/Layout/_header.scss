@@ -26,8 +26,7 @@
     &__form {
         background-color: $color-bg;
         width: 100%;
-        @include text(1rem, $color-txt);
-        font-weight: bold;
+        @include text(1rem, $color-txt, $bold);
         p {
             text-align: center;
         }
@@ -39,8 +38,7 @@
             background-color: $color-bg;
             text-align: center;
             &::placeholder {
-                @include text(1rem, $color-txt);
-                font-weight: bold;
+                @include text(1rem, $color-txt, $bold);
             }
         }
     }

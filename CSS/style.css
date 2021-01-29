@@ -41,7 +41,7 @@ body {
   font-family: "Roboto";
   font-size: 1rem;
   color: #000000;
-  font-weight: bold;
+  font-weight: "500";
 }
 .header__form p {
   text-align: center;
@@ -58,7 +58,7 @@ body {
   font-family: "Roboto";
   font-size: 1rem;
   color: #000000;
-  font-weight: bold;
+  font-weight: "500";
 }
 
 .pres {
@@ -80,12 +80,13 @@ body {
   font-family: "Roboto";
   font-size: 1.5rem;
   color: #000000;
-  font-weight: 900;
+  font-weight: "500";
 }
 .pres__p {
   font-family: "Roboto";
   font-size: 1rem;
   color: #000000;
+  font-weight: "300";
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -103,6 +104,7 @@ body {
   font-family: "Roboto";
   font-size: 1rem;
   color: White;
+  font-weight: "500";
 }
 
 .op {
@@ -112,6 +114,7 @@ body {
   font-family: "Roboto";
   font-size: 1.5rem;
   color: #000000;
+  font-weight: "300";
 }
 .op__step {
   display: flex;
@@ -133,6 +136,7 @@ body {
   font-family: "Roboto";
   font-size: 1rem;
   color: white;
+  font-weight: "300";
   text-align: center;
   background-color: #9356DC;
   padding: 5px 10px 5px 10px;
@@ -147,8 +151,10 @@ body {
   font-family: "Roboto";
   font-size: 1rem;
   color: #000000;
+  font-weight: "300";
   margin-top: 22px;
 }
+
 .resto {
   width: 100%;
   background-color: #f0efef;
@@ -158,7 +164,7 @@ body {
   font-family: "Roboto";
   font-size: 1.5rem;
   color: #000000;
-  font-weight: 500;
+  font-weight: "500";
   margin-left: 15px;
   padding-top: 50px;
 }
@@ -206,14 +212,14 @@ body {
   font-family: "Roboto";
   font-size: 1rem;
   color: #000000;
-  font-weight: 500;
+  font-weight: "500";
 }
 .resto__lien__fig__cap__sup {
   margin-left: 8px;
   font-family: "Roboto";
   font-size: 1rem;
   color: #000000;
-  font-weight: 300;
+  font-weight: "300";
   margin-bottom: -20px;
 }
 .resto__lien__fig__cap__heart {
@@ -227,16 +233,61 @@ body {
 }
 
 .menu {
-  border-radius: 25px 25px 0px 0px;
-  margin-top: -10px;
-  background-color: red;
+  border-radius: 40px 40px 0px 0px;
+  background-color: #f0efef;
   overflow: visible;
+  padding-top: 10px;
+  position: relative;
+  top: -50px;
 }
 .menu__title {
   margin-left: 15px;
   font-family: "Shrikhand";
   font-size: 1.5rem;
   color: #000000;
+}
+.menu__starter {
+  margin-left: 15px;
+}
+.menu__starter__title {
+  font-family: "Roboto";
+  font-size: 1rem;
+  color: #000000;
+  font-weight: "300";
+  font-weight: 300;
+}
+
+.plat {
+  background-color: white;
+  margin-right: 15px;
+  padding-left: 10px;
+  border-radius: 15px;
+}
+.plat__title {
+  font-family: "Roboto";
+  font-size: 1rem;
+  color: #000000;
+  font-weight: "500";
+  margin-bottom: -10px;
+  padding-top: 10px;
+}
+.plat__sup {
+  font-family: "Roboto";
+  font-size: 1rem;
+  color: #000000;
+  font-weight: "300";
+  font-weight: "300";
+  margin-bottom: -20px;
+}
+.plat__price {
+  font-family: "Roboto";
+  font-size: 1rem;
+  color: #000000;
+  font-weight: "500";
+  font-weight: "500";
+  position: relative;
+  top: -15px;
+  left: 240px;
 }
 
 .footer {
@@ -264,6 +315,7 @@ body {
   font-family: "Roboto";
   font-size: 1rem;
   color: white;
+  font-weight: "300";
 }
 .footer__nav__menu__element__icone {
   margin-right: 5px;
@@ -272,6 +324,7 @@ body {
   font-family: "Roboto";
   font-size: 0.9rem;
   color: white;
+  font-weight: "300";
 }
 
 /*# sourceMappingURL=style.css.map */

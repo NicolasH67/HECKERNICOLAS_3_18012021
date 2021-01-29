@@ -15,11 +15,11 @@
             }
             &__element{
                 text-decoration: none;
-                @include text(1rem, white);
+                @include text(1rem, white, $normal);
                 &__icone {
                     margin-right: 5px;
                     &--small {
-                        @include text(0.9rem, white)
+                        @include text(0.9rem, white, $normal)
                     }
                 }
             }

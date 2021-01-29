@@ -4,10 +4,11 @@
     color: $color;
 }
 
-@mixin text($size, $color) {
+@mixin text($size, $color, $weight) {
     font-family: $txt;
     font-size: $size;
     color: $color;
+    font-weight: $weight;
 }
 
 @mixin icone($size, $color) {

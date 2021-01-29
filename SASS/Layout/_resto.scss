@@ -3,8 +3,7 @@
     background-color: lighten($color-bg, 5%);
     padding-bottom: 30px;
     &__title {
-        @include text(1.5rem, $color-txt);
-        font-weight: 500;
+        @include text(1.5rem, $color-txt, $bold);
         margin-left: 15px;
         padding-top: 50px;
     }
@@ -44,13 +43,11 @@
                 &__title {
                     margin-left: 8px;
                     margin-bottom: -10px;
-                    @include text(1rem, $color-txt);
-                    font-weight: 500;
+                    @include text(1rem, $color-txt, $bold);
                 }
                 &__sup {
                     margin-left: 8px;
-                    @include text(1rem, $color-txt);
-                    font-weight: 300;
+                    @include text(1rem, $color-txt, $normal);
                     margin-bottom: -20px;
                 }
                 &__heart {
