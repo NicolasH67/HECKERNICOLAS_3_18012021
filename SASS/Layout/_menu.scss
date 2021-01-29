@@ -3,6 +3,7 @@
     background-color: lighten($color-bg, 5%);
     overflow: visible;
     padding-top: 10px;
+    padding-bottom: 40px;
     position: relative;
     top: -50px;
     &__title {
@@ -15,6 +16,23 @@
             @include text(1rem, $color-txt, $normal);
             font-weight: 300;
         }
+    }
+    &__dish {
+        @extend .menu__starter;
+        &__title {
+            @extend .menu__starter__title;
+        }
+    }
+    &__dessert {
+        @extend .menu__starter;
+        margin-bottom: 35px;
+        &__title {
+            @extend .menu__starter__title;
+        }
+
+    }
+    &__btn {
+        @include center;
     }
 }
 

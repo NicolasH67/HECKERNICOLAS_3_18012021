@@ -21,3 +21,11 @@
     margin-right: auto;
     text-align: center;
 }
+
+@mixin menu {
+    margin-left: 15px;
+    &__title {
+        @include text(1rem, $color-txt, $normal);
+        font-weight: 300;
+    }
+}

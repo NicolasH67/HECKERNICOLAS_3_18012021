@@ -106,6 +106,9 @@ body {
   color: White;
   font-weight: "500";
 }
+.btn--menu {
+  padding: 15px 40px 15px 40px;
+}
 
 .op {
   margin: 25px 15px 35px 15px;
@@ -237,6 +240,7 @@ body {
   background-color: #f0efef;
   overflow: visible;
   padding-top: 10px;
+  padding-bottom: 40px;
   position: relative;
   top: -50px;
 }
@@ -246,15 +250,23 @@ body {
   font-size: 1.5rem;
   color: #000000;
 }
-.menu__starter {
+.menu__starter, .menu__dessert, .menu__dish {
   margin-left: 15px;
 }
-.menu__starter__title {
+.menu__starter__title, .menu__dessert__title, .menu__dish__title {
   font-family: "Roboto";
   font-size: 1rem;
   color: #000000;
   font-weight: "300";
   font-weight: 300;
+}
+.menu__dessert {
+  margin-bottom: 35px;
+}
+.menu__btn {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .plat {
@@ -294,6 +306,9 @@ body {
   background-color: #3d3d3d;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+.footer--menu {
+  margin-top: -50px;
 }
 .footer__title {
   font-family: "Shrikhand";

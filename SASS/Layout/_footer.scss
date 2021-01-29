@@ -2,6 +2,9 @@
     background-color: $color-bg-footer;
     padding-top: 15px;
     padding-bottom: 15px;
+    &--menu {
+        margin-top: -50px
+    }
     &__title {
         @include logo(1rem, white);
         margin-left: 25px;
