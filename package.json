@@ -4,7 +4,8 @@
   "description": "Scénario Vous venez d’être recruté chez Ohmyfood!, en tant que développeur junior. Félicitations !",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./SASS/main.scss:CSS/style.css"
+    "sass": "sass --watch ./SASS/main.scss:CSS/style.css",
+    "prefix": "postcss CSS/style.css --use autoprefixer -d CSS/prefixed"
   },
   "repository": {
     "type": "git",
