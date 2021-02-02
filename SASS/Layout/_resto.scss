@@ -55,9 +55,7 @@
                     position: relative;
                     left: 245px;
                     top: -20px;
-                    &--2nd {
-                        left: 213px;
-                    }
+                    background-color: linear-gradient($color-secondary, $color-primary);
                 }
             }
         }
