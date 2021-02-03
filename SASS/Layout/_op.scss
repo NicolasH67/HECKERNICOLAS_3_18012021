@@ -14,6 +14,9 @@
         &:hover {
             background-color: lighten($color-primary, 36%);
         }
+        &:hover &__icone {
+            color: $color-primary;
+        }
         &__num {
             position: relative;
             left: -10px;
@@ -24,7 +27,7 @@
             border-radius: 150px;
         }
         &__icone {
-            @include icone(1rem, $color-primary);
+            @include icone(1rem, $color-txt);
             margin: 22px 15px auto 10px;
         }
         &__title {

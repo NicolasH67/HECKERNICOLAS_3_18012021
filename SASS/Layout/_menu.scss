@@ -9,6 +9,13 @@
     &__title {
         margin-left: 15px;
         @include logo(1.5rem, $color-txt);
+        margin-bottom: -10px;
+    }
+    &__heart {
+        @include text(1.5rem, black, 300);
+        position: relative;
+        top: -20px;
+        left: 265px;
     }
     &__starter {
         margin-left: 15px;
@@ -45,11 +52,18 @@
         @include text(1rem, $color-txt, $bold);
         margin-bottom: -10px;
         padding-top: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 90%;
     }
     &__sup {
         @include text(1rem, $color-txt, $normal);
         font-weight: $normal;
-        margin-bottom: -20px
+        margin-bottom: -20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 90%;
+        flex-wrap: nowrap;
     }
     &__price {
         @include text(1rem, $color-txt, $bold);
