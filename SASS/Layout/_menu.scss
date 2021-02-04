@@ -21,7 +21,9 @@
         margin-left: 15px;
         &__title {
             @include text(1rem, $color-txt, $normal);
-            font-weight: 300;
+            border-bottom: 3px $color-tertiary solid;
+            width: 40px; 
+            height: 25px;
         }
     }
     &__dish {

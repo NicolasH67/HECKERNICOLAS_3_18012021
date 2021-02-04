@@ -190,7 +190,7 @@ body {
   font-family: "Roboto";
   font-size: 1.5rem;
   color: #000000;
-  font-weight: 300;
+  font-weight: 500;
 }
 .op__step {
   display: flex;
@@ -202,6 +202,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  box-shadow: 5px 5px #e6e6e6;
 }
 .op__step:hover {
   background-color: #f4eefc;
@@ -230,7 +231,7 @@ body {
   font-family: "Roboto";
   font-size: 1rem;
   color: #000000;
-  font-weight: 300;
+  font-weight: 500;
   margin-top: 22px;
 }
 
@@ -341,7 +342,9 @@ body {
   font-size: 1rem;
   color: #000000;
   font-weight: 300;
-  font-weight: 300;
+  border-bottom: 3px #99E2D0 solid;
+  width: 40px;
+  height: 25px;
 }
 .menu__dessert {
   margin-bottom: 35px;
