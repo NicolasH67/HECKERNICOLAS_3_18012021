@@ -50,6 +50,8 @@
     margin-right: 15px;
     padding-left: 10px;
     border-radius: 15px;
+    animation: ItemAppear;
+    animation-duration: 3s;
     &__title {
         @include text(1rem, $color-txt, $bold);
         margin-bottom: -10px;
