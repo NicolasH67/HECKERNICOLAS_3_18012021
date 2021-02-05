@@ -2,32 +2,35 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
-@keyframes itemAppear {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 @keyframes loader {
+  0% {
+    opacity: 0.9;
+  }
+  99% {
+    opacity: 0.9;
+  }
   100% {
     opacity: 0;
     z-index: -10;
   }
 }
-@keyframes jump {
+@keyframes animate {
   0% {
-    transform: translateY(0);
+    background-position: 0 0;
   }
-  25% {
-    transform: translateY(0.5rem);
-  }
-  75% {
-    transform: translateY(-0.5rem);
+  50% {
+    background-position: 300% 0;
   }
   100% {
-    transform: translateY(0);
+    background-position: 0 0;
+  }
+}
+@keyframes ItemAppear {
+  0% {
+    z-index: -10;
+  }
+  100% {
+    z-index: 1;
   }
 }
 body {
@@ -37,47 +40,46 @@ body {
 
 .loader {
   position: fixed;
-  height: 100%;
-  width: 100%;
   left: 0;
   top: 0;
-  background-color: rgba(255, 255, 255, 0.9);
-  animation: loader 0.01s;
-  animation-delay: 1.75s;
-  animation-fill-mode: both;
-  z-index: 10000;
+  height: 100%;
+  width: 100%;
+  background: black;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-}
-.loader__title {
-  font-family: "Shrikhand";
-  font-size: 2rem;
-  color: #000000;
+  align-items: center;
+  animation: loader 4s;
+  z-index: 10000;
+  animation-fill-mode: both;
 }
 .loader__container {
+  width: 50%;
+  height: 20%;
+  background: #1f1f1f;
+  position: relative;
+  color: white;
+  font-size: 1rem;
   display: flex;
-  width: 5rem;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px 5px 20px 5px;
 }
-.loader__container__item {
-  height: 1rem;
-  width: 1rem;
-  border-radius: 1rem;
-  animation: jump 1s;
-  animation-iteration-count: 1;
+.loader__container::before, .loader__container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, #9356DC, #FF79DA, #99E2D0, #9356DC, #FF79DA, #99E2D0, #9356DC, #FF79DA, #99E2D0);
+  width: 100%;
+  height: 100%;
+  background-size: 500%;
+  z-index: -1;
+  transform: scale(1.02);
+  animation: animate 10s infinite;
+  border-radius: 20px 5px 20px 5px;
 }
-.loader__container__item--1 {
-  background-color: #9356DC;
-}
-.loader__container__item--2 {
-  background-color: #FF79DA;
-  animation-delay: 0.25s;
-}
-.loader__container__item--3 {
-  background-color: #99E2D0;
-  animation-delay: 0.5s;
+.loader__container::after {
+  filter: blur(20px);
 }
 
 .header {
@@ -360,8 +362,8 @@ body {
   margin-right: 15px;
   padding-left: 10px;
   border-radius: 15px;
-  animation: ItemAppear;
-  animation-duration: 3s;
+  animation: ItemAppear 3s;
+  animation-fill-mode: both;
 }
 .plat__title {
   font-family: "Roboto";

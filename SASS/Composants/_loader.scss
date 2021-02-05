@@ -1,42 +1,43 @@
 .loader {
   position: fixed;
+  left: 0;
+  top: 0;  
   height: 100%;
   width: 100%;
-  left: 0;
-  top: 0;
-  background-color: rgba(255, 255, 255, 0.90);
-  animation: loader 0.01s;
-  animation-delay: 1.75s;
-  animation-fill-mode: both;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: loader 4s;
   z-index: 10000;
-  display:flex;
-  flex-direction: column;
-  align-items:center;
-  justify-content:center;
-  &__title {
-    @include logo(2rem, $color-txt);
-  }
+  animation-fill-mode: both;
   &__container {
+    width: 50%;
+    height: 20%;
+    background: rgb(31, 31, 31);
+    position: relative;
+    color: white;
+    font-size: 1rem;
     display: flex;
-    width: 5rem;
-    justify-content: space-between;
-    &__item {
-      height: 1rem;
-      width: 1rem;
-      border-radius: 1rem;
-      animation: jump 1s;
-      animation-iteration-count: 1;
-      &--1 {
-        background-color: $color-primary;
-      }
-      &--2 {
-        background-color: $color-secondary;
-        animation-delay: 0.25s;
-      }
-      &--3 {
-        background-color: $color-tertiary;
-        animation-delay: 0.5s;
-      }
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 5px 20px 5px;
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: linear-gradient(45deg, $color-primary, $color-secondary, $color-tertiary, $color-primary, $color-secondary, $color-tertiary, $color-primary, $color-secondary, $color-tertiary);
+      width: 100%;
+      height: 100%;
+      background-size: 500%;
+      z-index: -1;
+      transform: scale(1.02);
+      animation: animate 10s infinite;
+      border-radius: 20px 5px 20px 5px;
+    }
+    &::after {
+      filter: blur(20px);
     }
   }
 }
