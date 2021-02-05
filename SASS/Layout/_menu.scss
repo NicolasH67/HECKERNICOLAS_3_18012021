@@ -14,8 +14,27 @@
     &__heart {
         @include text(1.5rem, black, 300);
         position: relative;
+        display: block;
+        background: -webkit-linear-gradient($color-primary, $color-secondary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         top: -20px;
         left: 265px;
+        &--full {
+            @include text(1.5rem, black, 300);
+            position: relative;
+            display: block;
+            background: -webkit-linear-gradient($color-primary, $color-secondary);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            top: -20px;
+            left: 237px;
+            opacity: 0;
+            &:hover {
+                animation: HeartAppear .75s;
+                animation-fill-mode: both;
+            }
+        }
     }
     &__starter {
         margin-left: 15px;
@@ -50,7 +69,7 @@
     margin-right: 15px;
     padding-left: 10px;
     border-radius: 15px;
-    animation: ItemAppear 3s;
+    animation: ItemAppear 1s;
     animation-fill-mode: both;
     &__title {
         @include text(1rem, $color-txt, $bold);

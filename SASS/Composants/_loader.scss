@@ -31,12 +31,13 @@
       height: 100%;
       background-size: 500%;
       z-index: -1;
-      transform: scale(1.02);
+      transform: scale(1.05);
       animation: animate 10s infinite;
       border-radius: 100px;
     }
     &::after {
       filter: blur(20px);
+      transform: scale(1.2);
     }
   }
 }

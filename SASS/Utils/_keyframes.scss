@@ -1,9 +1,9 @@
 @keyframes loader {
   0% {
-    opacity: 0.9;
+    opacity: 0.8;
   }
   99% {
-    opacity: 0.9;
+    opacity: 0.8;
   }
   100% {
     opacity: 0;
@@ -24,10 +24,24 @@
 }
 
 @keyframes ItemAppear {
-    0% {
-      z-index: -10;
-    }
-    100% {
-      z-index: 1;
-    }
+  0% {
+      transform: translate(0, 100px);
+      opacity: 0;
+  }
+  90% {
+    opacity: 0,5;
+  }
+  100% {
+      transform: translate(0, 0px);
+      opacity: 1;
+  }
+}
+
+@keyframes HeartAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

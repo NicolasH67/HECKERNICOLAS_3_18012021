@@ -53,8 +53,27 @@
                 &__heart {
                     font-size: 1.75rem;
                     position: relative;
+                    display: block;
+                    background: -webkit-linear-gradient($color-primary, $color-secondary);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
                     left: 245px;
                     top: -20px;
+                    &--full {
+                        font-size: 1.75rem;
+                        position: relative;
+                        display: block;
+                        background: -webkit-linear-gradient($color-primary, $color-secondary);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                        left: 213px;
+                        top: -20px;
+                        opacity: 0;
+                        &:hover {
+                            animation: HeartAppear .75s;
+                            animation-fill-mode: both;
+                        }
+                    }
                 }
             }
         }
