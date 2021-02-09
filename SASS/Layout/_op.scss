@@ -1,5 +1,8 @@
 .op {
     margin: 25px 15px 35px 15px;
+    @media (min-width: 765px) {
+        width: 50%;
+    }
     &__title {
         @include text(1.5rem, $color-txt, $bold);
     }

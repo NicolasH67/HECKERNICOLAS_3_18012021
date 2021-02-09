@@ -6,6 +6,11 @@
     padding-top: 15px;
     padding-bottom: 45px;
     background-color: lighten($color-bg, 5%);
+    @media (min-width: 765px) {
+        width: 50%;
+        margin-top: 65px;
+        background: white;
+    }
     &__title {
         width: 80%;
         @include center;

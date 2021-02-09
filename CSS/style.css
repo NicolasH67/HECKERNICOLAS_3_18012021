@@ -106,11 +106,13 @@ body {
 .header__title {
   width: 100%;
   height: 50%;
+  padding-top: 1px;
   font-family: "Shrikhand";
   font-size: 1.9rem;
   color: #000000;
   text-align: center;
   margin: 5px auto 5px auto;
+  background: white;
 }
 .header__title--menu {
   margin-top: -15px;
@@ -161,6 +163,13 @@ body {
   padding-top: 15px;
   padding-bottom: 45px;
   background-color: #f0efef;
+}
+@media (min-width: 765px) {
+  .pres {
+    width: 50%;
+    margin-top: 65px;
+    background: white;
+  }
 }
 .pres__title {
   width: 80%;
@@ -218,6 +227,11 @@ body {
 .op {
   margin: 25px 15px 35px 15px;
 }
+@media (min-width: 765px) {
+  .op {
+    width: 50%;
+  }
+}
 .op__title {
   font-family: "Roboto";
   font-size: 1.5rem;
@@ -272,6 +286,12 @@ body {
   background-color: #f0efef;
   padding-bottom: 30px;
 }
+@media (min-width: 767px) {
+  .resto {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .resto__title {
   font-family: "Roboto";
   font-size: 1.5rem;
@@ -279,9 +299,16 @@ body {
   font-weight: 500;
   margin-left: 15px;
   padding-top: 50px;
+  width: 80%;
 }
 .resto__lien {
   text-decoration: none;
+}
+@media (min-width: 767px) {
+  .resto__lien {
+    width: 45%;
+    margin-right: 35px;
+  }
 }
 .resto__lien__fig {
   width: 90%;
@@ -289,6 +316,11 @@ body {
   margin-bottom: 30px;
   box-shadow: 5px 5px #e6e6e6;
   border-radius: 15px;
+}
+@media (min-width: 767px) {
+  .resto__lien__fig {
+    width: 100%;
+  }
 }
 .resto__lien__fig__img {
   width: 100%;
@@ -356,8 +388,23 @@ body {
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  left: 290px;
+  left: 245px;
   top: -20px;
+}
+@media (min-width: 374px) {
+  .resto__lien__fig__cap__heart {
+    left: 290px;
+  }
+}
+@media (min-width: 424px) {
+  .resto__lien__fig__cap__heart {
+    left: 330px;
+  }
+}
+@media (min-width: 767px) {
+  .resto__lien__fig__cap__heart {
+    left: 300px;
+  }
 }
 .resto__lien__fig__cap__heart--full {
   font-size: 1.75rem;
@@ -366,9 +413,24 @@ body {
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  left: 258px;
+  left: 214px;
   top: -20px;
   opacity: 0;
+}
+@media (min-width: 374px) {
+  .resto__lien__fig__cap__heart--full {
+    left: 258px;
+  }
+}
+@media (min-width: 424px) {
+  .resto__lien__fig__cap__heart--full {
+    left: 298px;
+  }
+}
+@media (min-width: 767px) {
+  .resto__lien__fig__cap__heart--full {
+    left: 268px;
+  }
 }
 .resto__lien__fig__cap__heart--full:hover {
   animation: HeartAppear 0.75s;
@@ -524,6 +586,13 @@ body {
   font-size: 0.9rem;
   color: white;
   font-weight: 300;
+}
+
+@media (min-width: 765px) {
+  .tablet {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
