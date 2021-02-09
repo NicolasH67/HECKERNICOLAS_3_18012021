@@ -9,11 +9,20 @@
     &__title {
         width: 80%;
         @include center;
-        @include text(1.5rem, $color-txt, $bold); 
+        @include text(1.5rem, $color-txt, $bold);
+        @media (min-width: 374px) {
+            width: 75%;
+        }
+        @media (min-width: 424px) {
+            width: 65%;
+        }
     }
     &__p {
         @include text(1rem, $color-txt, $normal);
         width: 90%;
         @include center;
+        @media (min-width: 424px) {
+            width: 80%;
+        }
     }
 }
