@@ -20,6 +20,15 @@
             -webkit-text-fill-color: transparent;
         top: -20px;
         left: 265px;
+        @media (min-width: 374px) {
+            left: 310px;
+        }
+        @media (min-width: 424px) {
+            left: 360px;
+        }
+        @media (min-width: 767px) {
+            left: 300px;
+        }
         &--full {
             @include text(1.5rem, black, 300);
             position: relative;
@@ -30,6 +39,15 @@
             top: -20px;
             left: 237px;
             opacity: 0;
+            @media (min-width: 374px) {
+                left: 282px;
+            }
+            @media (min-width: 424px) {
+                left: 332px;
+            }
+            @media (min-width: 767px) {
+                left: 272px;
+            }
             &:hover {
                 animation: HeartAppear .75s;
                 animation-fill-mode: both;
@@ -38,11 +56,17 @@
     }
     &__starter {
         margin-left: 15px;
+        @media (min-width: 767px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
         &__title {
             @include text(1rem, $color-txt, $normal);
             border-bottom: 3px $color-tertiary solid;
             width: 40px; 
             height: 25px;
+            margin-right: 100%
         }
     }
     &__dish {
@@ -71,6 +95,9 @@
     border-radius: 15px;
     animation: ItemAppear 1s;
     animation-fill-mode: both;
+    @media (min-width: 767px) {
+        width: 45%;
+    }
     &__title {
         @include text(1rem, $color-txt, $bold);
         margin-bottom: -10px;
@@ -89,5 +116,11 @@
         position: relative;
         top: -15px;
         left: 240px;
+        @media (min-width: 374px) {
+            left: 290px;
+        }
+        @media (min-width: 424px) {
+            left: 335px;
+        }
     }
 }
