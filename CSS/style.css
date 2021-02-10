@@ -545,71 +545,77 @@ body {
 
 .plat {
   background-color: white;
-  margin-right: 15px;
-  padding-left: 10px;
   border-radius: 15px;
-  animation: ItemAppear 1s;
-  animation-fill-mode: both;
+  width: 95%;
+  height: 70px;
   display: flex;
-  width: 90%;
-}
-@media (min-width: 767px) {
-  .plat {
-    width: 45%;
-  }
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 10px;
 }
 .plat__info {
-  width: 80%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .plat__info__title {
-  font-family: "Roboto";
-  font-size: 1rem;
-  color: #000000;
-  font-weight: 500;
   margin-bottom: -10px;
-  margin-top: -1px;
-  padding-top: 10px;
+  margin-left: 10px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 80%;
+  width: 100%;
+  font-family: "Roboto";
+  font-size: 1rem;
+  color: black;
+  font-weight: 500;
 }
 .plat__info__sup {
-  font-family: "Roboto";
-  font-size: 1rem;
-  color: #000000;
-  font-weight: 300;
+  margin-left: 10px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 80%;
-}
-.plat__price__p {
+  width: 100%;
   font-family: "Roboto";
-  font-size: 1rem;
-  color: #000000;
-  font-weight: 500;
+  font-size: 0.85rem;
+  color: black;
+  font-weight: 300;
+}
+.plat__price {
+  height: 100%;
   position: relative;
-  top: 20px;
-  left: -18px;
-}
-@media (min-width: 374px) {
-  .plat__price__p {
-    left: 290px;
-  }
-}
-@media (min-width: 424px) {
-  .plat__price__p {
-    left: 335px;
-  }
+  right: -55px;
+  top: 30px;
+  font-family: "Roboto";
+  font-size: 0.85rem;
+  color: black;
+  font-weight: 500;
+  transform: translateX(0);
+  display: flex;
+  transition: transform 800ms ease-in-out;
 }
 .plat__confirm {
-  background: #99E2D0;
+  background-color: #99E2D0;
+  width: 60px;
+  height: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 0 20px 0 20px;
-  border-radius: 0 15px 15px 0;
+  justify-content: center;
+  transform: translateX(15rem);
+  transition: transform 800ms ease-in-out;
+}
+.plat:hover > .plat__confirm {
+  transform: translateX(0);
+}
+.plat:hover > .plat__price {
+  transform: translateX(-3.2rem);
+}
+
+.s2 {
+  right: -35px;
 }
 
 .footer {

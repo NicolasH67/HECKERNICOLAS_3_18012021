@@ -89,50 +89,61 @@
 
 .plat {
     background-color: white;
-    margin-right: 15px;
-    padding-left: 10px;
     border-radius: 15px;
-    animation: ItemAppear 1s;
-    animation-fill-mode: both;
+    width: 95%;
+    height: 70px;
     display: flex;
-    width: 90%;
-    @media (min-width: 767px) {
-        width: 45%;
-    }
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 10px;
     &__info {
-        width: 80%;
+        height: 100%;
+        width: 100%;
+        display : flex;
+        flex-direction : column;
+        justify-content : center;
         &__title {
-            @include text(1rem, $color-txt, $bold);
             margin-bottom: -10px;
-            margin-top: -1px;
-            padding-top: 10px;
+            margin-left: 10px;
             @include ellipsis;
+            width: 100%;
+            @include text(1rem, black, $bold)
         }
         &__sup {
-            @include text(1rem, $color-txt, $normal);
+            margin-left: 10px;
             @include ellipsis;
+            width: 100%;
+            @include text(0.85rem, black, $normal)
         }
     }
     &__price {
-        &__p {
-            @include text(1rem, $color-txt, $bold);
-            position: relative;
-            top: 20px;
-            left: -18px;
-            @media (min-width: 374px) {
-                left: 290px;
-            }
-            @media (min-width: 424px) {
-                left: 335px;
-            }
-        }
+        height: 100%;
+        position: relative;
+        right: -55px;
+        top: 30px;
+        @include text(0.85rem, black, $bold);
+        transform: translateX(0);
+        display: flex;
+        transition: transform 800ms ease-in-out;
     }
     &__confirm {
-        background: #99E2D0;
+        background-color: $color-tertiary;
+        width: 60px;
+        height: 100%;
         display: flex;
-        justify-content: center;
         align-items: center;
-        padding: 0 20px 0 20px;
-        border-radius: 0 15px 15px 0;
-      }
+        justify-content: center;
+        transform: translateX(15rem);
+        transition: transform 800ms ease-in-out;
+    }
+    &:hover > .plat__confirm {
+        transform: translateX(0);
+    }
+    &:hover > .plat__price {
+        transform: translateX(-3.2rem);
+    }
+}
+.s2 {
+    right: -35px;
 }
