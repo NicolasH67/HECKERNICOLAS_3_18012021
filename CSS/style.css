@@ -561,6 +561,7 @@ body {
   align-items: center;
   overflow: hidden;
   margin-bottom: 10px;
+  animation: ItemAppear 1s;
 }
 .plat__info {
   height: 100%;
@@ -667,7 +668,7 @@ body {
 @media (min-width: 765px) {
   .tablet {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
   }
 }
 

@@ -97,6 +97,7 @@
     align-items: center;
     overflow: hidden;
     margin-bottom: 10px;
+    animation: ItemAppear 1s;
     &__info {
         height: 100%;
         &__title {
