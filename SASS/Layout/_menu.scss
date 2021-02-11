@@ -99,28 +99,24 @@
     margin-bottom: 10px;
     &__info {
         height: 100%;
-        width: 100%;
-        display : flex;
-        flex-direction : column;
-        justify-content : center;
         &__title {
             margin-bottom: -10px;
             margin-left: 10px;
             @include ellipsis;
-            width: 100%;
+            width: 200px;
             @include text(1rem, black, $bold)
         }
         &__sup {
             margin-left: 10px;
             @include ellipsis;
-            width: 100%;
+            width: 200px;
             @include text(0.85rem, black, $normal)
         }
     }
     &__price {
         height: 100%;
         position: relative;
-        right: -55px;
+        right: -45px;
         top: 30px;
         @include text(0.85rem, black, $bold);
         transform: translateX(0);
@@ -136,6 +132,9 @@
         justify-content: center;
         transform: translateX(15rem);
         transition: transform 800ms ease-in-out;
+        &__icone {
+            transform: rotate(360deg);
+        }
     }
     &:hover > .plat__confirm {
         transform: translateX(0);
@@ -143,7 +142,7 @@
     &:hover > .plat__price {
         transform: translateX(-3.2rem);
     }
-}
-.s2 {
-    right: -35px;
+    &:hover > .plat__confirm__icone {
+        animation: roll 2s;
+    }
 }
