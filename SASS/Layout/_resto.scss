@@ -11,12 +11,24 @@
         margin-left: 15px;
         padding-top: 50px;
         width: 80%;
+        @media (min-width: 1920px) {
+            width: 90%;
+        }
     }
     &__lien {
         text-decoration: none;
         @media (min-width: 767px) {
             width: 45%;
             margin-right: 35px;
+        }
+        @media (min-width: 1023px) {
+            width: 21%;
+        }
+        @media (min-width: 1440px) {
+            width: 22%;
+        }
+        @media (min-width: 1920px) {
+            width: 17%;
         }
         &__fig {
             width: 90%;
@@ -36,6 +48,12 @@
                 }
                 @media (min-width: 424px) {
                     height: 190px;
+                }
+                @media (min-width: 1023px) {
+                    height: 100px;
+                }
+                @media (min-width: 1440px) {
+                    height: 170px;
                 }
             }
             &__cap {
@@ -59,6 +77,12 @@
                     top: -120px;
                     @media (min-width: 424px) {
                         top: -140px;
+                    }
+                    @media (min-width: 1023px) {
+                        top: -65px;
+                    }
+                    @media (min-width: 1440px) {
+                        top: -127px;
                     }
                 }
                 &__title {
@@ -87,6 +111,12 @@
                     @media (min-width: 767px) {
                         left: 300px;
                     }
+                    @media (min-width: 1023px) {
+                        left: 175px;
+                    }
+                    @media (min-width: 1440px) {
+                        left: 275px;
+                    }
                     &--full {
                         font-size: 1.75rem;
                         position: relative;
@@ -94,7 +124,7 @@
                         background: -webkit-linear-gradient($color-primary, $color-secondary);
                             -webkit-background-clip: text;
                             -webkit-text-fill-color: transparent;
-                        left: 214px;
+                        left: 213px;
                         top: -20px;
                         opacity: 0;
                         @media (min-width: 374px) {
@@ -105,6 +135,12 @@
                         }
                         @media (min-width: 767px) {
                             left: 268px;
+                        }
+                        @media (min-width: 1023px) {
+                            left: 143px;
+                        }
+                        @media (min-width: 1440px) {
+                            left: 224px;
                         }
                         &:hover {
                             animation: HeartAppear .75s;

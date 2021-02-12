@@ -57,3 +57,20 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes btn {
+  0% {
+    filter: brightness(1);
+  }
+  100% {
+    filter: brightness(1.1);
+  }
+}
+@keyframes shadow {
+  0% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 1px 1px black;
+  }
+}
