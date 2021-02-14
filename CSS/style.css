@@ -57,19 +57,21 @@
     transform: rotate(360deg);
   }
 }
+@keyframes reduc {
+  0% {
+    width: 200px;
+  }
+  100% {
+    width: 180px;
+  }
+}
 @keyframes btn {
   0% {
     filter: brightness(1);
-  }
-  100% {
-    filter: brightness(1.1);
-  }
-}
-@keyframes shadow {
-  0% {
     box-shadow: none;
   }
   100% {
+    filter: brightness(1.2);
     box-shadow: 1px 1px black;
   }
 }
@@ -258,10 +260,6 @@ body {
 }
 .btn:hover {
   animation: btn 0.5s;
-  animation-fill-mode: both;
-}
-.btn:hover {
-  animation: shadow 0.5s;
   animation-fill-mode: both;
 }
 
@@ -528,7 +526,7 @@ body {
 }
 @media (min-width: 1440px) {
   .resto__lien__fig__cap__heart--full {
-    left: 224px;
+    left: 243px;
   }
 }
 .resto__lien__fig__cap__heart--full:hover {
@@ -548,6 +546,11 @@ body {
 }
 .menu--lne {
   top: -25px;
+}
+@media (min-width: 1024px) {
+  .menu {
+    top: 0px;
+  }
 }
 .menu__title {
   margin-left: 15px;
@@ -758,10 +761,12 @@ body {
   animation: roll 2s;
 }
 .plat:hover > .plat__info__title {
-  width: 180px;
+  animation: reduc 1s;
+  animation-fill-mode: both;
 }
 .plat:hover > .plat__info__sup {
-  width: 180px;
+  animation: reduc 1s;
+  animation-fill-mode: both;
 }
 
 .footer {
@@ -815,6 +820,7 @@ body {
   .pc {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 

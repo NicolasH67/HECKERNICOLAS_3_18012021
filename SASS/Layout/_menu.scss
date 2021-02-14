@@ -10,6 +10,9 @@
     &--lne {
         top: -25px;
     }
+    @media (min-width: 1024px) {
+        top: 0px;
+    }
     &__title {
         margin-left: 15px;
         @include logo(1.5rem, $color-txt);
@@ -176,9 +179,11 @@
         animation: roll 2s;
     }
     &:hover > .plat__info__title {
-        width: 180px;
+        animation: reduc 1s;
+        animation-fill-mode: both;
     }
     &:hover > .plat__info__sup {
-        width: 180px;
+        animation: reduc 1s;
+        animation-fill-mode: both;
     }
 }
