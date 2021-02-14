@@ -49,22 +49,6 @@
     opacity: 1;
   }
 }
-@keyframes roll {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes reduc {
-  0% {
-    width: 200px;
-  }
-  100% {
-    width: 180px;
-  }
-}
 @keyframes btn {
   0% {
     filter: brightness(1);
@@ -73,6 +57,14 @@
   100% {
     filter: brightness(1.2);
     box-shadow: 1px 1px black;
+  }
+}
+@keyframes roll {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 body {
@@ -749,7 +741,10 @@ body {
   transition: transform 800ms ease-in-out;
 }
 .plat__confirm__icone {
-  transform: rotate(360deg);
+  transform: rotate(-90deg);
+  transition: transform 800ms ease-in-out;
+  font-size: 1.25rem;
+  color: white;
 }
 .plat:hover > .plat__confirm {
   transform: translateX(0);
@@ -757,15 +752,8 @@ body {
 .plat:hover > .plat__price {
   transform: translateX(-3.2rem);
 }
-.plat:hover > .plat__confirm__icone {
+.plat:hover .plat__confirm__icone {
   animation: roll 2s;
-}
-.plat:hover > .plat__info__title {
-  animation: reduc 1s;
-  animation-fill-mode: both;
-}
-.plat:hover > .plat__info__sup {
-  animation: reduc 1s;
   animation-fill-mode: both;
 }
 

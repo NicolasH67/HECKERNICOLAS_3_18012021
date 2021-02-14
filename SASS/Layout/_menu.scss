@@ -166,24 +166,20 @@
         transform: translateX(15rem);
         transition: transform 800ms ease-in-out;
         &__icone {
-            transform: rotate(360deg);
+            transform: rotate(-90deg);
+            transition: transform 800ms ease-in-out;
+            font-size: 1.25rem;
+            color: white;
         }
     }
-    &:hover > .plat__confirm {
+    &:hover > &__confirm {
         transform: translateX(0);
     }
-    &:hover > .plat__price {
+    &:hover > &__price {
         transform: translateX(-3.2rem);
     }
-    &:hover > .plat__confirm__icone {
+    &:hover &__confirm__icone {
         animation: roll 2s;
-    }
-    &:hover > .plat__info__title {
-        animation: reduc 1s;
-        animation-fill-mode: both;
-    }
-    &:hover > .plat__info__sup {
-        animation: reduc 1s;
         animation-fill-mode: both;
     }
 }

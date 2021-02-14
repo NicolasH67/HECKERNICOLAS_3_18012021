@@ -49,24 +49,6 @@
   }
 }
 
-@keyframes roll {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes reduc {
-  0% {
-    width: 200px;
-  }
-  100% {
-    width: 180px;
-  }
-}
-
 @keyframes btn {
   0% {
     filter: brightness(1);
@@ -75,5 +57,14 @@
   100% {
     filter: brightness(1.2);
     box-shadow: 1px 1px black;
+  }
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
