@@ -67,6 +67,14 @@
     transform: rotate(360deg);
   }
 }
+@keyframes reduc {
+  0% {
+    width: 200px;
+  }
+  100% {
+    width: 170px;
+  }
+}
 body {
   margin: 0px;
   padding: 0px;
@@ -754,6 +762,14 @@ body {
 }
 .plat:hover .plat__confirm__icone {
   animation: roll 2s;
+  animation-fill-mode: both;
+}
+.plat:hover .plat__info__title {
+  animation: reduc 1.5s;
+  animation-fill-mode: both;
+}
+.plat:hover .plat__info__sup {
+  animation: reduc 1.5s;
   animation-fill-mode: both;
 }
 
